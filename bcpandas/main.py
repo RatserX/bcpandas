@@ -507,8 +507,8 @@ def to_sql(
     finally:
         if not debug:
             logger.debug("Deleting temp CSV and format files")
-            os.remove(csv_file_path)
-            os.remove(fmt_file_path)
+            #os.remove(csv_file_path)
+            #os.remove(fmt_file_path)
         else:
             logger.debug(
                 f"`to_sql` DEBUG mode, not deleting the files. CSV file is at "
